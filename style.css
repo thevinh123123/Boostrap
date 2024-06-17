@@ -1,0 +1,131 @@
+/* Đặt kiểu dáng chung cho toàn trang */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+    font-size: 50px;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #eaeaea;
+}
+
+#sidebar .sidebar-header {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#sidebar ul.components {
+    padding: 0;
+    list-style: none;
+}
+
+#sidebar ul.components li {
+    padding: 10px 0;
+}
+
+#sidebar ul.components li a {
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+#sidebar ul.components li a:hover {
+    color: #007bff;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#home {
+    background: #007bff;
+    color: #fff;
+    padding: 50px 0;
+    width: 100%;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#about h2, #courses h2, #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#courses .owl-carousel .item {
+    background: #007bff;
+    color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+#courses .owl-carousel .item:hover {
+    background: #0056b3;
+}
+
+#contact p {
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
+}
+
+/* Responsive cho di động */
+@media (max-width: 767px) {
+    #sidebar {
+        min-width: 100%;
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    #content {
+        padding: 10px;
+        align-items: flex-start;
+    }
+}
